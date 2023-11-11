@@ -1,14 +1,19 @@
 ---
-title: "advent-of-code-website-template"
-listing:
-  contents: posts
-  sort: "date desc"
-  type: default
-  categories: true
-  sort-ui: false
-  filter-ui: false
-page-layout: full
-title-block-banner: true
+title: "Advent of Code"
+subtitle: "My solutions and notes"
+#description: "My solutions and notes for Advent of Code."
+code-tools: false
 ---
+
+[Advent of Code](https://adventofcode.com) is a series of increasingly difficult programming challenges, 
+released daily each year throughout December in the run-up to Christmas.
+
+This website is created from the [EllaKaye/advent-of-code](https://github.com/EllaKaye/advent-of-code) repository.
+I use it to keep a record of my solutions and make notes about what I learn along the way. It is built with [Quarto](https://quarto.org) and supported by [R functions](https://github.com/EllaKaye/advent-of-code/blob/main/R/setup.R) to ease the process of downloading the data and creating the posts.
+
+The idea for this site came from seeing [Emil Hvitfeldt's version](https://emilhvitfeldt.github.io/rstats-adventofcode/) and also adapts and builds upon code from David Robinson's [adventdrob](https://github.com/dgrtwo/adventdrob) package.
+
+The styling is based on my [personal site](https://ellakaye.co.uk).
+
 
 

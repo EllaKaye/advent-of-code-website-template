@@ -1,0 +1,11 @@
+---
+title: "YYYY"
+listing:
+  contents: "YYYY/day"
+  sort: "date"
+  type: table
+  categories: true
+  sort-ui: false
+  filter-ui: false
+  fields: [title, categories]
+---

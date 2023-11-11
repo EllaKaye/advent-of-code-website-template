@@ -1,0 +1,39 @@
+/*-- scss:defaults --*/
+
+@font-face {
+  font-family: 'iAWriterMonoS-Bold';
+  src: local('iAWriterMonoS-Bold'), url('fonts/iAWriterMonoS-Bold.woff2') format('woff2'), url('fonts/iAWriterMonoS-Bold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'iAWriterMonoS-Regular';
+	src: local('iAWriterMonoS-Regular'), url('fonts/iAWriterMonoS-Regular.woff2') format('woff2'), url('fonts/iAWriterMonoS-Regular.woff') format('woff');
+}
+
+// fonts
+$font-family-sans-serif: "iAWriterMonoS-Regular", monospace !default;
+$font-family-monospace: "iAWriterMonoS-Regular", monospace;
+$headings-font-family: "iAWriterMonoS-Bold", monospace !default;
+
+$toc-font-size: 1rem;
+
+// colors
+$dark: #181829 !default;
+$primary: #00B200 !default;
+$secondary: #CCCCCC !default;
+$body-bg: $dark;
+$navbar-bg: $body-bg;
+$navbar-fg: $primary;
+$body-color: $secondary;
+$code-bg: $dark;
+$code-color: $secondary;
+
+pre code {
+	background-color: $code-bg;
+	color: $secondary !important;
+}
+
+// navbar
+#quarto-header {
+  font-family: $headings-font-family;
+}

@@ -1,0 +1,67 @@
+---
+title: "YYYY: Day DD"
+date: YYYY-12-DD
+categories:
+  - TAG_1
+  - TAG_2
+draft: false
+code-tools: true
+toc: true
+---
+
+## Setup
+
+[The original challenge](https://adventofcode.com/YYYY/day/DD)
+
+[My data](input){target="_blank"}
+
+## Part 1
+
+```{r}
+#| echo: false
+OK <- "YYYY" < 3000
+# Will only evaluate next code block if an actual year has been substituted for the placeholder
+```
+
+
+```{r}
+#| eval: !expr OK
+library(aochelpers)
+# other options: aoc_input_data_frame(), aoc_input_matrix()
+input <- aoc_input_vector(DD, YYYY)
+head(input)
+```
+
+## Part 2
+
+
+##### Session info {.appendix}
+
+<details><summary>Toggle</summary>
+
+```{r}
+#| echo: false
+library(sessioninfo)
+# save the session info as an object
+pkg_session <- session_info(pkgs = "attached")
+
+# get the quarto version
+quarto_version <- system("quarto --version", intern = TRUE)
+
+# inject the quarto info
+pkg_session$platform$quarto <- paste(
+  system("quarto --version", intern = TRUE), 
+  "@", 
+  quarto::quarto_path()
+  )
+
+# print it out
+pkg_session
+```
+
+</details>
+
+
+
+
+

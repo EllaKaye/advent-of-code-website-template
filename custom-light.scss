@@ -1,0 +1,39 @@
+/*-- scss:defaults --*/
+
+@font-face {
+  font-family: 'iAWriterQuattroS-Regular';
+  src: local('iAWriterQuattroS-Regular'), url('fonts/iAWriterQuattroS-Regular.woff2') format('woff2'), url('fonts/iAWriterQuattroS-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'iAWriterQuattroS-Bold';
+  src: local('iAWriterQuattroS-Bold'), url('fonts/iAWriterQuattroS-Bold.woff2') format('woff2'), url('fonts/iAWriterQuattroS-Bold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'iAWriterMonoS-Regular';
+	src: local('iAWriterMonoS-Regular'), url('fonts/iAWriterMonoS-Regular.woff2') format('woff2'), url('fonts/iAWriterMonoS-Regular.woff') format('woff');
+}
+
+// fonts
+$font-family-sans-serif: "iAWriterQuattroS-Regular", Helvetica, sans-serif !default;
+$font-family-monospace: "iAWriterMonoS-Regular", monospace;
+$headings-font-family: "iAWriterQuattroS-Bold", Figtree, Helvetica, sans-serif !default;
+
+// colors
+$primary: #008000;
+$body-bg: #FFFFFF;
+$navbar-bg: $body-bg;
+$navbar-fg: $primary;
+
+// navbar
+#quarto-header {
+  //font-family: "LEMONMILKPro-Regular", Jost, Helvetica, sans-serif;
+  // font-family: "ABCSocialExtendedEdu-Bold", Jost, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-family: $headings-font-family;
+}
+
+#navbarCollapse > ul.navbar-nav.navbar-nav-scroll.me-auto > li > a > span {
+  font-size: 1.5rem;
+}
