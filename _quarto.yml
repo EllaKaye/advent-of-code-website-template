@@ -11,18 +11,12 @@ website:
   description: My solutions to Advent of Code
   repo-url: https://github.com/EllaKaye/advent-of-code-website-template
   navbar:
-#    left:
-#      - 2020.qmd
+    left:
+     - 2022.qmd
     right:
       - icon: github
         href: https://github.com/EllaKaye/advent-of-code-website-template
   open-graph: true
-
-execute:
-  freeze: auto
-  echo: true
-  message: false
-  warning: false
 
 format:
   html:
@@ -31,13 +25,8 @@ format:
       dark: custom-dark.scss
     css: styles.css
     code-block-border-left: true
-    # highlight-style: 
-    #   light: assets/ek-light.theme
-    #   dark: assets/ek-dark.theme
     smooth-scroll: true
     link-external-newwindow: true
-    code-fold: show
-    code-summary: "Toggle the code"
 
 editor: source
 

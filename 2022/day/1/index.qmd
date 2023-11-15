@@ -1,0 +1,90 @@
+---
+title: "2022: Day 1"
+date: 2022-12-1
+categories: [base R, lists]
+draft: false
+---
+
+## Setup
+
+[The original challenge](https://adventofcode.com/2022/day/1)
+
+[My data](input){target="_blank"}
+
+## Part 1
+
+I'm including this post in the website example to demonstrate what a typical post will look like, using `post-template`, in the `_templates` directory as a starting point. This post is created by a call to `aoc_new_day(1, 2022)`. It can be deleted with a call to `aoc_delete_day(1, 2022)`, or all posts and the listing for the year can be deleted with `aoc_delete_year(2022)`.
+
+```{r}
+#| echo: false
+OK <- "2022" < 3000
+# Will only evaluate next code block if an actual year has been substituted for the placeholder
+```
+
+
+```{r}
+#| eval: !expr OK
+library(aochelpers)
+input <- aoc_input_vector(1, 2022, "numeric")
+```
+
+I'm using the `aoc_input_vector()` function from the **aochelpers** package to read in the data, but otherwise using base R functions (including the native pipe, `|>`) for this puzzle. 
+
+::: {.callout-note}
+This is Ella Kaye's solution^[Ella is the author of this website template and of the **aochelpers** package, and the author of this demo post.], with her puzzle input. If attempting this challenge yourself, your solution will be different.
+:::
+
+In this challenge, we're given groups of numbers and we need to find the sum of each group. 
+Our solution is the largest of these. The groups are separated by a blank line. When reading in the input as a numeric vector, these are coerced to `NA`.
+We can identify the new groups by the `NA` values, produce an index for them with `cumsum(is.na(input))`,
+which increments when a new `NA` is reached, then use this with `split()` to split the input into a list of vectors, one for each group.
+We need the argument `na.rm = TRUE` in `sapply()` because each vector, other than the first, starts with `NA`, as that's where it was split.
+
+```{r}
+totals <- split(input, cumsum(is.na(input))) |> 
+  sapply(sum, na.rm = TRUE) 
+
+max(totals)
+```
+
+## Part 2
+
+This is similar, except we want to find the sum of the sums of the top three groups.
+
+```{r}
+totals |> 
+  sort() |> 
+  tail(3) |> 
+  sum()
+```
+
+##### Session info {.appendix}
+
+<details><summary>Toggle</summary>
+
+```{r}
+#| echo: false
+library(sessioninfo)
+# save the session info as an object
+pkg_session <- session_info(pkgs = "attached")
+
+# get the quarto version
+quarto_version <- system("quarto --version", intern = TRUE)
+
+# inject the quarto info
+pkg_session$platform$quarto <- paste(
+  system("quarto --version", intern = TRUE), 
+  "@", 
+  quarto::quarto_path()
+  )
+
+# print it out
+pkg_session
+```
+
+</details>
+
+
+
+
+
