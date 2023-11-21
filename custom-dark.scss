@@ -21,6 +21,7 @@ $toc-font-size: 1rem;
 $dark: #181829 !default;
 $green: #00B200 !default;
 $red: #FF2743 !default;
+$yellow: #FFFF46 !default;
 
 $primary: $green;
 
@@ -30,7 +31,7 @@ $navbar-bg: $body-bg;
 $navbar-fg: $primary;
 $body-color: $secondary;
 $code-bg: $dark;
-$code-color: $red;
+$code-color: $yellow;
 
 pre code {
 	background-color: $code-bg;
