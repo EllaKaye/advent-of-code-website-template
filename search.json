@@ -14,13 +14,6 @@
     "text": "Title\n\n\nCategories\n\n\n\n\n\n\n2022: Introduction\n\n\n \n\n\n\n\n2022: Day 1\n\n\nbase R, lists\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "2022/day/2022-introduction/index.html",
-    "href": "2022/day/2022-introduction/index.html",
-    "title": "2022: Introduction",
-    "section": "",
-    "text": "Here’s a demo introduction page. It’s created from \"./_templates/YYYY-intro\" as part of the call to aoc_new_year(2022, intro = TRUE).\nThis is a good place to note any over-riding themes for the year, what you want to practice/learn, etc."
-  },
-  {
     "objectID": "2022/day/1/index.html",
     "href": "2022/day/1/index.html",
     "title": "2022: Day 1",
@@ -47,6 +40,13 @@
     "title": "2022: Day 1",
     "section": "Part 2",
     "text": "Part 2\nThis is similar, except we want to find the sum of the sums of the top three groups.\n\n\nCode\ntotals |&gt; \n  sort() |&gt; \n  tail(3) |&gt; \n  sum()\n\n\n[1] 198551"
+  },
+  {
+    "objectID": "2022/day/2022-intro/index.html",
+    "href": "2022/day/2022-intro/index.html",
+    "title": "2022: Introduction",
+    "section": "",
+    "text": "Here’s a demo introduction page. It’s created from \"./_templates/YYYY-intro\" as part of the call to aoc_new_year(2022, intro = TRUE).\nThis is a good place to note any over-riding themes for the year, what you want to practice/learn, etc."
   },
   {
     "objectID": "index.html",
