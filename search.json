@@ -14,6 +14,34 @@
     "text": "This year, I’m planning to solve Advent of Code challenges using R and hope to learn how to …"
   },
   {
+    "objectID": "2022/day/2022-intro/index.html",
+    "href": "2022/day/2022-intro/index.html",
+    "title": "2022: Introduction",
+    "section": "",
+    "text": "Here’s a demo introduction page. It’s created from \"./_templates/YYYY-intro\" as part of the call to aoc_new_year(2022, intro = TRUE).\nThis is a good place to note any over-riding themes for the year, what you want to practice/learn, etc."
+  },
+  {
+    "objectID": "2023.html",
+    "href": "2023.html",
+    "title": "2023",
+    "section": "",
+    "text": "Title\n\n\nCategories\n\n\n\n\n\n\n2023: Introduction\n\n\nundefined\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "2022.html",
+    "href": "2022.html",
+    "title": "2022",
+    "section": "",
+    "text": "Title\n\n\nCategories\n\n\n\n\n\n\n2022: Introduction\n\n\nundefined\n\n\n\n\n2022: Day 1\n\n\nbase R,lists\n\n\n\n\n2022: Day 2\n\n\nTAG_1,TAG_2\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Advent of Code",
+    "section": "",
+    "text": "Advent of Code is a series of increasingly difficult programming challenges, released daily each year throughout December in the run-up to Christmas.\nThis website is created from the EllaKaye/advent-of-code-website-template template repository.\nIt is built with Quarto and works hand-in-hand with the R package aochelpers. The package provides function to manage this website, e.g. to create new posts from a template, to download and read in the puzzle input, and will eventually include functions to help with the challenges themselves. See the package website for more details.\nAs part of the demo, this template comes with an example listing page and some example posts for 2022, which you can delete with aochelpers::aoc_delete_year(2022), as well as a listing and introduction to get started for 2023.\nThere are two built-in themes. The light theme is designed to be quite clean, with a Christmas green and red colours. The dark theme is designed to be reminiscent of the Advent of Code website (though not identical, since the design of https://adventofcode.com is part of its registered trademark). You can switch between them using the toggle in the top right corner of the page."
+  },
+  {
     "objectID": "2022/day/1/index.html",
     "href": "2022/day/1/index.html",
     "title": "2022: Day 1",
@@ -49,32 +77,32 @@
     "text": "Footnotes\n\n\nElla is the author of this website template and of the aochelpers package, and the author of this demo post.↩︎"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Advent of Code",
+    "objectID": "2022/day/2/index.html",
+    "href": "2022/day/2/index.html",
+    "title": "2022: Day 2",
     "section": "",
-    "text": "Advent of Code is a series of increasingly difficult programming challenges, released daily each year throughout December in the run-up to Christmas.\nThis website is created from the EllaKaye/advent-of-code-website-template template repository.\nIt is built with Quarto and works hand-in-hand with the R package aochelpers. The package provides function to manage this website, e.g. to create new posts from a template, to download and read in the puzzle input, and will eventually include functions to help with the challenges themselves. See the package website for more details.\nAs part of the demo, this template comes with an example listing page and some example posts for 2022, which you can delete with aochelpers::aoc_delete_year(2022), as well as a listing and introduction to get started for 2023.\nThere are two built-in themes. The light theme is designed to be quite clean, with a Christmas green and red colours. The dark theme is designed to be reminiscent of the Advent of Code website (though not identical, since the design of https://adventofcode.com is part of its registered trademark). You can switch between them using the toggle in the top right corner of the page."
+    "text": "The original challenge\nMy data"
   },
   {
-    "objectID": "2022.html",
-    "href": "2022.html",
-    "title": "2022",
+    "objectID": "2022/day/2/index.html#setup",
+    "href": "2022/day/2/index.html#setup",
+    "title": "2022: Day 2",
     "section": "",
-    "text": "Title\n\n\nCategories\n\n\n\n\n\n\n2022: Introduction\n\n\nundefined\n\n\n\n\n2022: Day 1\n\n\nbase R,lists\n\n\n\n\n\n\nNo matching items"
+    "text": "The original challenge\nMy data"
   },
   {
-    "objectID": "2023.html",
-    "href": "2023.html",
-    "title": "2023",
-    "section": "",
-    "text": "Title\n\n\nCategories\n\n\n\n\n\n\n2023: Introduction\n\n\nundefined\n\n\n\n\n\n\nNo matching items"
+    "objectID": "2022/day/2/index.html#part-1",
+    "href": "2022/day/2/index.html#part-1",
+    "title": "2022: Day 2",
+    "section": "Part 1",
+    "text": "Part 1\n\n\nCode\nlibrary(aochelpers)\n# other options: aoc_input_data_frame(), aoc_input_matrix()\ninput &lt;- aoc_input_vector(2, 2022)\nhead(input)\n\n\n[1] \"A X\" \"B Y\" \"B Y\" \"C X\" \"B X\" \"C Z\""
   },
   {
-    "objectID": "2022/day/2022-intro/index.html",
-    "href": "2022/day/2022-intro/index.html",
-    "title": "2022: Introduction",
-    "section": "",
-    "text": "Here’s a demo introduction page. It’s created from \"./_templates/YYYY-intro\" as part of the call to aoc_new_year(2022, intro = TRUE).\nThis is a good place to note any over-riding themes for the year, what you want to practice/learn, etc."
+    "objectID": "2022/day/2/index.html#part-2",
+    "href": "2022/day/2/index.html#part-2",
+    "title": "2022: Day 2",
+    "section": "Part 2",
+    "text": "Part 2"
   },
   {
     "objectID": "fonts/Readme.html",

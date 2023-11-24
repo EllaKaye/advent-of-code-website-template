@@ -2,34 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://github.com/EllaKaye/advent-of-code-website-template/fonts/LICENSE.html</loc>
-    <lastmod>2023-11-24T08:31:40.608Z</lastmod>
+    <lastmod>2023-11-24T08:36:31.277Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/EllaKaye/advent-of-code-website-template/2023/day/2023-introduction/index.html</loc>
-    <lastmod>2023-11-24T08:31:39.976Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/EllaKaye/advent-of-code-website-template/2022/day/1/index.html</loc>
-    <lastmod>2023-11-24T08:31:39.444Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/EllaKaye/advent-of-code-website-template/index.html</loc>
-    <lastmod>2023-11-24T08:31:38.576Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/EllaKaye/advent-of-code-website-template/2022.html</loc>
-    <lastmod>2023-11-24T08:31:37.704Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/EllaKaye/advent-of-code-website-template/2023.html</loc>
-    <lastmod>2023-11-24T08:31:38.856Z</lastmod>
+    <lastmod>2023-11-24T08:36:30.669Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/EllaKaye/advent-of-code-website-template/2022/day/2022-intro/index.html</loc>
-    <lastmod>2023-11-24T08:31:39.724Z</lastmod>
+    <lastmod>2023-11-24T08:36:29.933Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/EllaKaye/advent-of-code-website-template/2023.html</loc>
+    <lastmod>2023-11-24T08:36:29.053Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/EllaKaye/advent-of-code-website-template/2022.html</loc>
+    <lastmod>2023-11-24T08:36:27.905Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/EllaKaye/advent-of-code-website-template/index.html</loc>
+    <lastmod>2023-11-24T08:36:28.765Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/EllaKaye/advent-of-code-website-template/2022/day/1/index.html</loc>
+    <lastmod>2023-11-24T08:36:29.661Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/EllaKaye/advent-of-code-website-template/2022/day/2/index.html</loc>
+    <lastmod>2023-11-24T08:36:30.401Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/EllaKaye/advent-of-code-website-template/fonts/Readme.html</loc>
-    <lastmod>2023-11-24T08:31:40.272Z</lastmod>
+    <lastmod>2023-11-24T08:36:30.941Z</lastmod>
   </url>
 </urlset>
