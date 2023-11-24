@@ -1,0 +1,15 @@
+{
+  "hash": "d576ca22b41787348ba9f2aae187a0bf",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"2022: Day 2\"\ndate: 2022-12-2\ncategories:\n  - TAG_1\n  - TAG_2\ndraft: false\n---\n\n\n## Setup\n\n[The original challenge](https://adventofcode.com/2022/day/2)\n\n[My data](input){target=\"_blank\"}\n\n## Part 1\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(aochelpers)\n# other options: aoc_input_data_frame(), aoc_input_matrix()\ninput <- aoc_input_vector(2, 2022)\nhead(input)\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] \"A X\" \"B Y\" \"B Y\" \"C X\" \"B X\" \"C Z\"\n```\n\n\n:::\n:::\n\n\n## Part 2\n\n\n##### Session info {.appendix}\n\n<details><summary>Toggle</summary>\n\n\n::: {.cell}\n::: {.cell-output .cell-output-stdout}\n\n```\n─ Session info ───────────────────────────────────────────────────────────────\n setting  value\n version  R version 4.3.1 (2023-06-16)\n os       macOS Sonoma 14.1\n system   aarch64, darwin20\n ui       X11\n language (EN)\n collate  en_US.UTF-8\n ctype    en_US.UTF-8\n tz       Europe/London\n date     2023-11-24\n pandoc   3.1.1 @ /Applications/RStudio.app/Contents/Resources/app/quarto/bin/tools/ (via rmarkdown)\n quarto   1.4.504 @ /usr/local/bin/quarto\n\n─ Packages ───────────────────────────────────────────────────────────────────\n package     * version    date (UTC) lib source\n aochelpers  * 0.0.0.9000 2023-11-23 [1] local\n sessioninfo * 1.2.2      2021-12-06 [1] CRAN (R 4.3.0)\n\n [1] /Users/ellakaye/Library/R/arm64/4.3/library\n [2] /Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library\n\n──────────────────────────────────────────────────────────────────────────────\n```\n\n\n:::\n:::\n\n\n</details>\n\n\n\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
