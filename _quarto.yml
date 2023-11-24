@@ -4,7 +4,10 @@ project:
     - fonts
   preview:
     port: 4321
-    
+
+execute:
+  freeze: auto
+  
 website:
   title: "Advent of Code"
   #site-url: https://github.com
