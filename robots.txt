@@ -1,1 +1,1 @@
-Sitemap: https://EllaKaye.github.io/advent-of-code-website-template/sitemap.xml
+Sitemap: https://github.com/EllaKaye/advent-of-code-website-template/sitemap.xml
