@@ -13,6 +13,7 @@ website:
   navbar:
     left:
      - 2022.qmd
+     - 2023.qmd
     right:
       - icon: github
         href: https://github.com/EllaKaye/advent-of-code-website-template

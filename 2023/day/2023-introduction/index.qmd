@@ -1,0 +1,6 @@
+---
+title: "2023: Introduction"
+code-tools: false
+---
+
+This year, I'm planning to solve Advent of Code challenges using R and hope to learn how to ...
