@@ -2,7 +2,7 @@
 title: "2023: Introduction"
 date: 2023-11-30
 code-tools: false
-categories: ""
+categories: [demo]
 ---
 
 Here's a demo introduction page. It's created from `"./_templates/YYYY-intro"` as part of the call to `aoc_new_year(2023)`. 
