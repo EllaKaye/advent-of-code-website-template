@@ -17,7 +17,7 @@ and will eventually include functions to help with the challenges themselves. Se
 
 As part of the demo, this template comes with an example listing page and some example posts for 2022, which you can delete with `aochelpers::aoc_delete_year(2022)`, as well as a listing and introduction to get started for 2023.
 
-There are two built-in themes. The light theme is designed to be quite clean, with a Christmas green and red colours. The dark theme is designed to be reminiscent of the Advent of Code website (though not identical, since the design of <https://adventofcode.com> is part of its registered trademark). You can switch between them using the toggle in the top right corner of the page.
+There are two built-in themes. The light theme is designed to be quite clean, with a Christmas green and red colours. The dark theme is designed to be reminiscent of the Advent of Code website (though not identical, since the design of <https://adventofcode.com> is part of its registered trademark). You can switch between them using the toggle in the top right corner of the page. Both themes use [fonts from iA](https://github.com/iaolo/iA-Fonts). The themes can be adapted in the `custom-light.scss` and `custom-dark.scss` files.
 
 
 
