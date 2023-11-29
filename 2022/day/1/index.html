@@ -198,14 +198,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="part-1" class="level2">
 <h2 class="anchored" data-anchor-id="part-1">Part 1</h2>
 <p>I’m including this post in the website example to demonstrate what a typical post will look like, using <code>post-template</code>, in the <code>_templates</code> directory as a starting point. This post is created by a call to <code>aoc_new_day(1, 2022)</code>. It can be deleted with a call to <code>aoc_delete_day(1, 2022)</code>, or all posts and the listing for the year can be deleted with <code>aoc_delete_year(2022)</code>.</p>
-<div class="cell">
-<details open="">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(aochelpers)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>input <span class="ot">&lt;-</span> <span class="fu">aoc_input_vector</span>(<span class="dv">1</span>, <span class="dv">2022</span>, <span class="st">"numeric"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-</div>
-<p>I’m using the <code>aoc_input_vector()</code> function from the <strong>aochelpers</strong> package to read in the data, but otherwise using base R functions (including the native pipe, <code>|&gt;</code>) for this puzzle.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -219,6 +211,14 @@ Note
 <p>This is Ella Kaye’s solution<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, with her puzzle input. If attempting this challenge yourself, your solution will be different.</p>
 </div>
 </div>
+<div class="cell">
+<details open="">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(aochelpers)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>input <span class="ot">&lt;-</span> <span class="fu">aoc_input_vector</span>(<span class="dv">1</span>, <span class="dv">2022</span>, <span class="st">"numeric"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<p>I’m using the <code>aoc_input_vector()</code> function from the <strong>aochelpers</strong> package to read in the data, but otherwise using base R functions (including the native pipe, <code>|&gt;</code>) for this puzzle.</p>
 <p>In this challenge, we’re given groups of numbers and we need to find the sum of each group. Our solution is the largest of these. The groups are separated by a blank line. When reading in the input as a numeric vector, these are coerced to <code>NA</code>. We can identify the new groups by the <code>NA</code> values, produce an index for them with <code>cumsum(is.na(input))</code>, which increments when a new <code>NA</code> is reached, then use this with <code>split()</code> to split the input into a list of vectors, one for each group. We need the argument <code>na.rm = TRUE</code> in <code>sapply()</code> because each vector, other than the first, starts with <code>NA</code>, as that’s where it was split.</p>
 <div class="cell">
 <details open="">
@@ -262,7 +262,7 @@ Toggle
 <div class="cell-output cell-output-stdout">
 <pre><code>─ Session info ───────────────────────────────────────────────────────────────
  setting  value
- version  R version 4.3.1 (2023-06-16)
+ version  R version 4.3.2 (2023-10-31)
  os       macOS Sonoma 14.1
  system   aarch64, darwin20
  ui       X11
@@ -270,13 +270,13 @@ Toggle
  collate  en_US.UTF-8
  ctype    en_US.UTF-8
  tz       Europe/London
- date     2023-11-15
+ date     2023-11-29
  pandoc   3.1.1 @ /Applications/RStudio.app/Contents/Resources/app/quarto/bin/tools/ (via rmarkdown)
- quarto   1.4.489 @ /usr/local/bin/quarto
+ quarto   1.4.504 @ /usr/local/bin/quarto
 
 ─ Packages ───────────────────────────────────────────────────────────────────
  package     * version    date (UTC) lib source
- aochelpers  * 0.0.0.9000 2023-11-13 [1] local
+ aochelpers  * 0.0.0.9000 2023-11-28 [1] Github (EllaKaye/aochelpers@58fe238)
  sessioninfo * 1.2.2      2021-12-06 [1] CRAN (R 4.3.0)
 
  [1] /Users/ellakaye/Library/R/arm64/4.3/library
@@ -732,72 +732,71 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a><span class="co"># Will only evaluate next code block if an actual year has been substituted for the placeholder</span></span>
 <span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb7-30"><a href="#cb7-30" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: !expr OK</span></span>
-<span id="cb7-31"><a href="#cb7-31" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(aochelpers)</span>
-<span id="cb7-32"><a href="#cb7-32" aria-hidden="true" tabindex="-1"></a>input <span class="ot">&lt;-</span> <span class="fu">aoc_input_vector</span>(<span class="dv">1</span>, <span class="dv">2022</span>, <span class="st">"numeric"</span>)</span>
-<span id="cb7-33"><a href="#cb7-33" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb7-34"><a href="#cb7-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-35"><a href="#cb7-35" aria-hidden="true" tabindex="-1"></a>I'm using the <span class="in">`aoc_input_vector()`</span> function from the **aochelpers** package to read in the data, but otherwise using base R functions (including the native pipe, <span class="in">`|&gt;`</span>) for this puzzle. </span>
-<span id="cb7-36"><a href="#cb7-36" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-37"><a href="#cb7-37" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
-<span id="cb7-38"><a href="#cb7-38" aria-hidden="true" tabindex="-1"></a>This is Ella Kaye's solution^<span class="co">[</span><span class="ot">Ella is the author of this website template and of the **aochelpers** package, and the author of this demo post.</span><span class="co">]</span>, with her puzzle input. If attempting this challenge yourself, your solution will be different.</span>
-<span id="cb7-39"><a href="#cb7-39" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb7-40"><a href="#cb7-40" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-41"><a href="#cb7-41" aria-hidden="true" tabindex="-1"></a>In this challenge, we're given groups of numbers and we need to find the sum of each group. </span>
-<span id="cb7-42"><a href="#cb7-42" aria-hidden="true" tabindex="-1"></a>Our solution is the largest of these. The groups are separated by a blank line. When reading in the input as a numeric vector, these are coerced to <span class="in">`NA`</span>.</span>
-<span id="cb7-43"><a href="#cb7-43" aria-hidden="true" tabindex="-1"></a>We can identify the new groups by the <span class="in">`NA`</span> values, produce an index for them with <span class="in">`cumsum(is.na(input))`</span>,</span>
-<span id="cb7-44"><a href="#cb7-44" aria-hidden="true" tabindex="-1"></a>which increments when a new <span class="in">`NA`</span> is reached, then use this with <span class="in">`split()`</span> to split the input into a list of vectors, one for each group.</span>
-<span id="cb7-45"><a href="#cb7-45" aria-hidden="true" tabindex="-1"></a>We need the argument <span class="in">`na.rm = TRUE`</span> in <span class="in">`sapply()`</span> because each vector, other than the first, starts with <span class="in">`NA`</span>, as that's where it was split.</span>
-<span id="cb7-46"><a href="#cb7-46" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-49"><a href="#cb7-49" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb7-50"><a href="#cb7-50" aria-hidden="true" tabindex="-1"></a>totals <span class="ot">&lt;-</span> <span class="fu">split</span>(input, <span class="fu">cumsum</span>(<span class="fu">is.na</span>(input))) <span class="sc">|&gt;</span> </span>
-<span id="cb7-51"><a href="#cb7-51" aria-hidden="true" tabindex="-1"></a>  <span class="fu">sapply</span>(sum, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) </span>
-<span id="cb7-52"><a href="#cb7-52" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-53"><a href="#cb7-53" aria-hidden="true" tabindex="-1"></a><span class="fu">max</span>(totals)</span>
-<span id="cb7-54"><a href="#cb7-54" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb7-55"><a href="#cb7-55" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-56"><a href="#cb7-56" aria-hidden="true" tabindex="-1"></a><span class="fu">## Part 2</span></span>
-<span id="cb7-57"><a href="#cb7-57" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-58"><a href="#cb7-58" aria-hidden="true" tabindex="-1"></a>This is similar, except we want to find the sum of the sums of the top three groups.</span>
-<span id="cb7-59"><a href="#cb7-59" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-62"><a href="#cb7-62" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb7-63"><a href="#cb7-63" aria-hidden="true" tabindex="-1"></a>totals <span class="sc">|&gt;</span> </span>
-<span id="cb7-64"><a href="#cb7-64" aria-hidden="true" tabindex="-1"></a>  <span class="fu">sort</span>() <span class="sc">|&gt;</span> </span>
-<span id="cb7-65"><a href="#cb7-65" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tail</span>(<span class="dv">3</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb7-66"><a href="#cb7-66" aria-hidden="true" tabindex="-1"></a>  <span class="fu">sum</span>()</span>
-<span id="cb7-67"><a href="#cb7-67" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb7-68"><a href="#cb7-68" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-69"><a href="#cb7-69" aria-hidden="true" tabindex="-1"></a><span class="fu">##### Session info {.appendix}</span></span>
-<span id="cb7-70"><a href="#cb7-70" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-71"><a href="#cb7-71" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;details&gt;&lt;summary&gt;</span>Toggle<span class="kw">&lt;/summary&gt;</span></span>
-<span id="cb7-72"><a href="#cb7-72" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-75"><a href="#cb7-75" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb7-76"><a href="#cb7-76" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
-<span id="cb7-77"><a href="#cb7-77" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sessioninfo)</span>
-<span id="cb7-78"><a href="#cb7-78" aria-hidden="true" tabindex="-1"></a><span class="co"># save the session info as an object</span></span>
-<span id="cb7-79"><a href="#cb7-79" aria-hidden="true" tabindex="-1"></a>pkg_session <span class="ot">&lt;-</span> <span class="fu">session_info</span>(<span class="at">pkgs =</span> <span class="st">"attached"</span>)</span>
-<span id="cb7-80"><a href="#cb7-80" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-81"><a href="#cb7-81" aria-hidden="true" tabindex="-1"></a><span class="co"># get the quarto version</span></span>
-<span id="cb7-82"><a href="#cb7-82" aria-hidden="true" tabindex="-1"></a>quarto_version <span class="ot">&lt;-</span> <span class="fu">system</span>(<span class="st">"quarto --version"</span>, <span class="at">intern =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb7-83"><a href="#cb7-83" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-84"><a href="#cb7-84" aria-hidden="true" tabindex="-1"></a><span class="co"># inject the quarto info</span></span>
-<span id="cb7-85"><a href="#cb7-85" aria-hidden="true" tabindex="-1"></a>pkg_session<span class="sc">$</span>platform<span class="sc">$</span>quarto <span class="ot">&lt;-</span> <span class="fu">paste</span>(</span>
-<span id="cb7-86"><a href="#cb7-86" aria-hidden="true" tabindex="-1"></a>  <span class="fu">system</span>(<span class="st">"quarto --version"</span>, <span class="at">intern =</span> <span class="cn">TRUE</span>), </span>
-<span id="cb7-87"><a href="#cb7-87" aria-hidden="true" tabindex="-1"></a>  <span class="st">"@"</span>, </span>
-<span id="cb7-88"><a href="#cb7-88" aria-hidden="true" tabindex="-1"></a>  quarto<span class="sc">::</span><span class="fu">quarto_path</span>()</span>
-<span id="cb7-89"><a href="#cb7-89" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb7-90"><a href="#cb7-90" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-91"><a href="#cb7-91" aria-hidden="true" tabindex="-1"></a><span class="co"># print it out</span></span>
-<span id="cb7-92"><a href="#cb7-92" aria-hidden="true" tabindex="-1"></a>pkg_session</span>
-<span id="cb7-93"><a href="#cb7-93" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb7-94"><a href="#cb7-94" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-95"><a href="#cb7-95" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/details&gt;</span></span>
+<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
+<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a>This is Ella Kaye's solution^<span class="co">[</span><span class="ot">Ella is the author of this website template and of the **aochelpers** package, and the author of this demo post.</span><span class="co">]</span>, with her puzzle input. If attempting this challenge yourself, your solution will be different.</span>
+<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-32"><a href="#cb7-32" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb7-33"><a href="#cb7-33" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: !expr OK</span></span>
+<span id="cb7-34"><a href="#cb7-34" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(aochelpers)</span>
+<span id="cb7-35"><a href="#cb7-35" aria-hidden="true" tabindex="-1"></a>input <span class="ot">&lt;-</span> <span class="fu">aoc_input_vector</span>(<span class="dv">1</span>, <span class="dv">2022</span>, <span class="st">"numeric"</span>)</span>
+<span id="cb7-36"><a href="#cb7-36" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb7-37"><a href="#cb7-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-38"><a href="#cb7-38" aria-hidden="true" tabindex="-1"></a>I'm using the <span class="in">`aoc_input_vector()`</span> function from the **aochelpers** package to read in the data, but otherwise using base R functions (including the native pipe, <span class="in">`|&gt;`</span>) for this puzzle. </span>
+<span id="cb7-39"><a href="#cb7-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-40"><a href="#cb7-40" aria-hidden="true" tabindex="-1"></a>In this challenge, we're given groups of numbers and we need to find the sum of each group. </span>
+<span id="cb7-41"><a href="#cb7-41" aria-hidden="true" tabindex="-1"></a>Our solution is the largest of these. The groups are separated by a blank line. When reading in the input as a numeric vector, these are coerced to <span class="in">`NA`</span>.</span>
+<span id="cb7-42"><a href="#cb7-42" aria-hidden="true" tabindex="-1"></a>We can identify the new groups by the <span class="in">`NA`</span> values, produce an index for them with <span class="in">`cumsum(is.na(input))`</span>,</span>
+<span id="cb7-43"><a href="#cb7-43" aria-hidden="true" tabindex="-1"></a>which increments when a new <span class="in">`NA`</span> is reached, then use this with <span class="in">`split()`</span> to split the input into a list of vectors, one for each group.</span>
+<span id="cb7-44"><a href="#cb7-44" aria-hidden="true" tabindex="-1"></a>We need the argument <span class="in">`na.rm = TRUE`</span> in <span class="in">`sapply()`</span> because each vector, other than the first, starts with <span class="in">`NA`</span>, as that's where it was split.</span>
+<span id="cb7-45"><a href="#cb7-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-48"><a href="#cb7-48" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb7-49"><a href="#cb7-49" aria-hidden="true" tabindex="-1"></a>totals <span class="ot">&lt;-</span> <span class="fu">split</span>(input, <span class="fu">cumsum</span>(<span class="fu">is.na</span>(input))) <span class="sc">|&gt;</span> </span>
+<span id="cb7-50"><a href="#cb7-50" aria-hidden="true" tabindex="-1"></a>  <span class="fu">sapply</span>(sum, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) </span>
+<span id="cb7-51"><a href="#cb7-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-52"><a href="#cb7-52" aria-hidden="true" tabindex="-1"></a><span class="fu">max</span>(totals)</span>
+<span id="cb7-53"><a href="#cb7-53" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb7-54"><a href="#cb7-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-55"><a href="#cb7-55" aria-hidden="true" tabindex="-1"></a><span class="fu">## Part 2</span></span>
+<span id="cb7-56"><a href="#cb7-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-57"><a href="#cb7-57" aria-hidden="true" tabindex="-1"></a>This is similar, except we want to find the sum of the sums of the top three groups.</span>
+<span id="cb7-58"><a href="#cb7-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-61"><a href="#cb7-61" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb7-62"><a href="#cb7-62" aria-hidden="true" tabindex="-1"></a>totals <span class="sc">|&gt;</span> </span>
+<span id="cb7-63"><a href="#cb7-63" aria-hidden="true" tabindex="-1"></a>  <span class="fu">sort</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb7-64"><a href="#cb7-64" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tail</span>(<span class="dv">3</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb7-65"><a href="#cb7-65" aria-hidden="true" tabindex="-1"></a>  <span class="fu">sum</span>()</span>
+<span id="cb7-66"><a href="#cb7-66" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb7-67"><a href="#cb7-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-68"><a href="#cb7-68" aria-hidden="true" tabindex="-1"></a><span class="fu">##### Session info {.appendix}</span></span>
+<span id="cb7-69"><a href="#cb7-69" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-70"><a href="#cb7-70" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;details&gt;&lt;summary&gt;</span>Toggle<span class="kw">&lt;/summary&gt;</span></span>
+<span id="cb7-71"><a href="#cb7-71" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-74"><a href="#cb7-74" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb7-75"><a href="#cb7-75" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
+<span id="cb7-76"><a href="#cb7-76" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sessioninfo)</span>
+<span id="cb7-77"><a href="#cb7-77" aria-hidden="true" tabindex="-1"></a><span class="co"># save the session info as an object</span></span>
+<span id="cb7-78"><a href="#cb7-78" aria-hidden="true" tabindex="-1"></a>pkg_session <span class="ot">&lt;-</span> <span class="fu">session_info</span>(<span class="at">pkgs =</span> <span class="st">"attached"</span>)</span>
+<span id="cb7-79"><a href="#cb7-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-80"><a href="#cb7-80" aria-hidden="true" tabindex="-1"></a><span class="co"># get the quarto version</span></span>
+<span id="cb7-81"><a href="#cb7-81" aria-hidden="true" tabindex="-1"></a>quarto_version <span class="ot">&lt;-</span> <span class="fu">system</span>(<span class="st">"quarto --version"</span>, <span class="at">intern =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb7-82"><a href="#cb7-82" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-83"><a href="#cb7-83" aria-hidden="true" tabindex="-1"></a><span class="co"># inject the quarto info</span></span>
+<span id="cb7-84"><a href="#cb7-84" aria-hidden="true" tabindex="-1"></a>pkg_session<span class="sc">$</span>platform<span class="sc">$</span>quarto <span class="ot">&lt;-</span> <span class="fu">paste</span>(</span>
+<span id="cb7-85"><a href="#cb7-85" aria-hidden="true" tabindex="-1"></a>  <span class="fu">system</span>(<span class="st">"quarto --version"</span>, <span class="at">intern =</span> <span class="cn">TRUE</span>), </span>
+<span id="cb7-86"><a href="#cb7-86" aria-hidden="true" tabindex="-1"></a>  <span class="st">"@"</span>, </span>
+<span id="cb7-87"><a href="#cb7-87" aria-hidden="true" tabindex="-1"></a>  quarto<span class="sc">::</span><span class="fu">quarto_path</span>()</span>
+<span id="cb7-88"><a href="#cb7-88" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb7-89"><a href="#cb7-89" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-90"><a href="#cb7-90" aria-hidden="true" tabindex="-1"></a><span class="co"># print it out</span></span>
+<span id="cb7-91"><a href="#cb7-91" aria-hidden="true" tabindex="-1"></a>pkg_session</span>
+<span id="cb7-92"><a href="#cb7-92" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb7-93"><a href="#cb7-93" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-94"><a href="#cb7-94" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/details&gt;</span></span>
+<span id="cb7-95"><a href="#cb7-95" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-96"><a href="#cb7-96" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-97"><a href="#cb7-97" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-98"><a href="#cb7-98" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-99"><a href="#cb7-99" aria-hidden="true" tabindex="-1"></a></span>
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
