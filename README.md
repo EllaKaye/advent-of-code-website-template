@@ -80,9 +80,7 @@ library(aochelpers)
 ```
 
 The two main functions for managing files, already mentioned above, are
-`aoc_new_year()` and `aoc_new_day()`. In the descriptions below, the
-`YYYY` and `DD` placeholders are used to indicate where the year and day
-values will be inserted.
+`aoc_new_year()` and `aoc_new_day()`.
 
 The calls used to create this template were:
 
@@ -94,9 +92,13 @@ aoc_new_year(2022, intro = FALSE) # set up a specified year (without intro post)
 # Add a post for a new day
 aoc_new_day(1, 2022) # day 1 of 2022 (don't need to specify year for current year)
 
-# Get input for a day without greating a post
+# Get input for a day without generating a post 
+# (i.e. no index.qmd or script.R in the 2022/day/2 directory)
 aoc_get_input(2, 2022) # day 2 of specified year
 ```
+
+In the descriptions below, the `YYYY` and `DD` placeholders are used to
+indicate where the year and day values will be inserted.
 
 [`aoc_new_year()`](https://ellakaye.github.io/aochelpers/reference/aoc_new_year.html)
 will
@@ -133,11 +135,12 @@ page for details.
 
 ## Examples posts
 
-The template comes ready to go for 2023, and also with an example
-introduction and day 1 post for 2022, so you can see what the templates
-look in action. All files related to 2022 can be removed with a call to
-`aoc_delete_year(2022)`. The intro post for 2023 can be removed with
-`aoc_delete_intro(2023)` (once there’s another post for 2023 present).
+The template comes ready to go for 2023, with a placeholder introduction
+post, and also with an day 1 post for 2022, so you can see what the
+templates look in action. All files related to 2022 can be removed with
+a call to `aoc_delete_year(2022)`. The intro post for 2023 can be
+removed with `aoc_delete_intro(2023)` (once there’s another post for
+2023 present).
 
 ## Functions for reading in input
 
@@ -210,11 +213,11 @@ see the [documentation](https://quarto.org/docs/publishing/).
 
 ## Examples
 
-This template span out from my work on an Advent of Code website for
-myself, links below. If anyone else uses this template and would like to
-share the links on this README, please do submit a pull request to
-include it here, or raise an issue and I’ll add it. It would be great to
-get a collection.
+This template is an extension of my work on an Advent of Code website
+for myself, links below. If anyone else uses this template and would
+like to share the links on this README, please do submit a pull request
+to include it here, or raise an issue and I’ll add it. It would be great
+to get a collection.
 
 - Ella Kaye: [website](https://adventofcode.ellakaye.co.uk),
   [repo](https://github.com/EllaKaye/advent-of-code-website). This
