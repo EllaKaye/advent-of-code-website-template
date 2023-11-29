@@ -1,6 +1,11 @@
 ---
 title: "2023: Introduction"
+date: 2023-11-30
 code-tools: false
 ---
 
-This year, I'm planning to solve Advent of Code challenges using R and hope to learn how to ...
+Here's a demo introduction page. It's created from `"./_templates/YYYY-intro"` as part of the call to `aoc_new_year(2023)`. 
+
+It can be deleted with a call to `aoc_delete_intro(2023)` (though there needs to be at least one post in `./2023/day` for the website to render from Quarto v1.4).
+
+This is a good place to note any overarching themes for the year, what you want to practice/learn, etc.

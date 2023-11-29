@@ -1,8 +1,0 @@
----
-title: "2022: Introduction"
-date: 2022-11-30
----
-
-Here's a demo introduction page. It's created from `"./_templates/YYYY-intro"` as part of the call to `aoc_new_year(2022, intro = TRUE)`. 
-
-This is a good place to note any over-riding themes for the year, what you want to practice/learn, etc.

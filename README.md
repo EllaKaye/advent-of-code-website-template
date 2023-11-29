@@ -2,17 +2,19 @@
 # Advent of Code Website Template
 
 Here’s a template for making [Quarto](https://quarto.org) websites for
-working on and easy publishing [Advent of
-Code](https://adventofcode.com) solutions.
+working on and (optionally) publishing [Advent of
+Code](https://adventofcode.com) solutions. Essentially, each year is a
+listing page, and each day is a post.
 
 It works hand-in-hand with the
 [**aochelpers**](https://ellakaye.github.io/aochelpers) package for R,
-which makes it incredibly easy to set up new posts and listings, using
-supplied (though personalisable) templates, found in the `_templates`
-directory. When a template is copied by functions from **aochelpers**,
-e.g. `aoc_new_year(2023)` or `aoc_new_day(1, 2023)` any occurrence of
-“DD” and “YYYY” in both the template titles and the text inside will be
-replaced with the value of the `day` and `year` arguments respectively.
+which makes it incredibly easy to set up new posts, scripts and
+listings, using supplied (though personalisable) templates, found in the
+`_templates` directory. When a template is copied by functions from
+**aochelpers**, e.g. `aoc_new_year(2022)` or `aoc_new_day(1, 2023)` any
+occurrence of “DD” and “YYYY” in both the copied files’ titles and the
+text inside will be replaced with the value of the `day` and `year`
+arguments respectively.
 
 The website corresponding to this template is
 <https://ellakaye.github.io/advent-of-code-website-template>, so you can
@@ -86,8 +88,8 @@ The calls used to create this template were:
 
 ``` r
 # Add a listing page a directory for a new year
-aoc_new_year() # set up current year 
-aoc_new_year(2022) # set up specified year
+aoc_new_year() # set up current year (including intro post)
+aoc_new_year(2022, intro = FALSE) # set up a specified year (without intro post)
 
 # Add a post for a new day
 aoc_new_day(1, 2022) # day 1 of 2022 (don't need to specify year for current year)

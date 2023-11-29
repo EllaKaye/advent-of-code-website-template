@@ -21,6 +21,9 @@ OK <- "2022" < 3000
 # Will only evaluate next code block if an actual year has been substituted for the placeholder
 ```
 
+::: {.callout-note}
+This is Ella Kaye's solution^[Ella is the author of this website template and of the **aochelpers** package, and the author of this demo post.], with her puzzle input. If attempting this challenge yourself, your solution will be different.
+:::
 
 ```{r}
 #| eval: !expr OK
@@ -29,10 +32,6 @@ input <- aoc_input_vector(1, 2022, "numeric")
 ```
 
 I'm using the `aoc_input_vector()` function from the **aochelpers** package to read in the data, but otherwise using base R functions (including the native pipe, `|>`) for this puzzle. 
-
-::: {.callout-note}
-This is Ella Kaye's solution^[Ella is the author of this website template and of the **aochelpers** package, and the author of this demo post.], with her puzzle input. If attempting this challenge yourself, your solution will be different.
-:::
 
 In this challenge, we're given groups of numbers and we need to find the sum of each group. 
 Our solution is the largest of these. The groups are separated by a blank line. When reading in the input as a numeric vector, these are coerced to `NA`.
