@@ -9,6 +9,7 @@ code-tools: false
 released daily each year throughout December in the run-up to Christmas.
 
 This website is created from the  [EllaKaye/advent-of-code-website-template](https://github.com/EllaKaye/advent-of-code-website-template) template repository. 
+There's documentation on how to use and adapt the template in the repo README.
 
 It is built with [Quarto](https://quarto.org) and works hand-in-hand with the R package [**aochelpers**](https://github.com/EllaKaye/aochelpers). 
 The package provides function to manage this website, e.g. to create new posts from a template, 
