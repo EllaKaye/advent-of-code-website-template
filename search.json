@@ -1,40 +1,5 @@
 [
   {
-    "objectID": "fonts/LICENSE.html",
-    "href": "fonts/LICENSE.html",
-    "title": "iA Writer Typeface",
-    "section": "",
-    "text": "iA Writer Typeface\nCopyright © 2018 Information Architects Inc. with Reserved Font Name “iA Writer”\n\n\nBased on IBM Plex Typeface\nCopyright © 2017 IBM Corp. with Reserved Font Name “Plex”\n\n\nLicense\nThis Font Software is licensed under the SIL Open Font License, Version 1.1. This license is copied below, and is also available with a FAQ at: http://scripts.sil.org/OFL\n\n\n\nSIL OPEN FONT LICENSE Version 1.1 - 26 February 2007\n\n\n\nPREAMBLE The goals of the Open Font License (OFL) are to stimulate worldwide development of collaborative font projects, to support the font creation efforts of academic and linguistic communities, and to provide a free and open framework in which fonts may be shared and improved in partnership with others.\nThe OFL allows the licensed fonts to be used, studied, modified and redistributed freely as long as they are not sold by themselves. The fonts, including any derivative works, can be bundled, embedded, redistributed and/or sold with any software provided that any reserved names are not used by derivative works. The fonts and derivatives, however, cannot be released under any other type of license. The requirement for fonts to remain under this license does not apply to any document created using the fonts or their derivatives.\nDEFINITIONS “Font Software” refers to the set of files released by the Copyright Holder(s) under this license and clearly marked as such. This may include source files, build scripts and documentation.\n“Reserved Font Name” refers to any names specified as such after the copyright statement(s).\n“Original Version” refers to the collection of Font Software components as distributed by the Copyright Holder(s).\n“Modified Version” refers to any derivative made by adding to, deleting, or substituting – in part or in whole – any of the components of the Original Version, by changing formats or by porting the Font Software to a new environment.\n“Author” refers to any designer, engineer, programmer, technical writer or other person who contributed to the Font Software.\nPERMISSION & CONDITIONS Permission is hereby granted, free of charge, to any person obtaining a copy of the Font Software, to use, study, copy, merge, embed, modify, redistribute, and sell modified and unmodified copies of the Font Software, subject to the following conditions:\n\nNeither the Font Software nor any of its individual components, in Original or Modified Versions, may be sold by itself.\nOriginal or Modified Versions of the Font Software may be bundled, redistributed and/or sold with any software, provided that each copy contains the above copyright notice and this license. These can be included either as stand-alone text files, human-readable headers or in the appropriate machine-readable metadata fields within text or binary files as long as those fields can be easily viewed by the user.\nNo Modified Version of the Font Software may use the Reserved Font Name(s) unless explicit written permission is granted by the corresponding Copyright Holder. This restriction only applies to the primary font name as presented to the users.\nThe name(s) of the Copyright Holder(s) or the Author(s) of the Font Software shall not be used to promote, endorse or advertise any Modified Version, except to acknowledge the contribution(s) of the Copyright Holder(s) and the Author(s) or with their explicit written permission.\nThe Font Software, modified or unmodified, in part or in whole, must be distributed entirely under this license, and must not be distributed under any other license. The requirement for fonts to remain under this license does not apply to any document created using the Font Software.\n\nTERMINATION This license becomes null and void if any of the above conditions are not met.\nDISCLAIMER THE FONT SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM OTHER DEALINGS IN THE FONT SOFTWARE."
-  },
-  {
-    "objectID": "2023/day/2023-introduction/index.html",
-    "href": "2023/day/2023-introduction/index.html",
-    "title": "2023: Introduction",
-    "section": "",
-    "text": "Here’s a demo introduction page. It’s created from \"./_templates/YYYY-intro\" as part of the call to aoc_new_year(2023).\nIt can be deleted with a call to aoc_delete_intro(2023) (though there needs to be at least one post in ./2023/day for the website to render from Quarto v1.4).\nThis is a good place to note any overarching themes for the year, what you want to practice/learn, etc."
-  },
-  {
-    "objectID": "2023.html",
-    "href": "2023.html",
-    "title": "2023",
-    "section": "",
-    "text": "Title\n\n\nCategories\n\n\n\n\n\n\n2023: Introduction\n\n\ndemo\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "2022.html",
-    "href": "2022.html",
-    "title": "2022",
-    "section": "",
-    "text": "Title\n\n\nCategories\n\n\n\n\n\n\n2022: Day 1\n\n\nbase R,lists\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Advent of Code",
-    "section": "",
-    "text": "Advent of Code is a series of increasingly difficult programming challenges, released daily each year throughout December in the run-up to Christmas.\nThis website is created from the EllaKaye/advent-of-code-website-template template repository. There’s documentation on how to use and adapt the template in the repo README.\nIt is built with Quarto and works hand-in-hand with the R package aochelpers. The package provides function to manage this website, e.g. to create new posts from a template, to download and read in the puzzle input, and will eventually include functions to help with the challenges themselves. See the package website for more details.\nAs part of the demo, this template comes with an example listing page and Day 1 post for 2022, which you can delete with aochelpers::aoc_delete_year(2022), as well as a listing and introduction to get started for 2023.\nThere are two built-in themes. The light theme is designed to be quite clean, with a Christmas green and red colours. The dark theme is designed to be reminiscent of the Advent of Code website (though not identical, since the design of https://adventofcode.com is part of its registered trademark). You can switch between them using the toggle in the top right corner of the page. Both themes use fonts from iA. The themes can be adapted in the custom-light.scss and custom-dark.scss files."
-  },
-  {
     "objectID": "2022/day/1/index.html",
     "href": "2022/day/1/index.html",
     "title": "2022: Day 1",
@@ -70,10 +35,45 @@
     "text": "Footnotes\n\n\nElla is the author of this website template and of the aochelpers package, and the author of this demo post.↩︎"
   },
   {
+    "objectID": "2023.html",
+    "href": "2023.html",
+    "title": "2023",
+    "section": "",
+    "text": "Title\n\n\nCategories\n\n\n\n\n\n\n2023: Introduction\n\n\ndemo\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "fonts/LICENSE.html",
+    "href": "fonts/LICENSE.html",
+    "title": "iA Writer Typeface",
+    "section": "",
+    "text": "iA Writer Typeface\nCopyright © 2018 Information Architects Inc. with Reserved Font Name “iA Writer”\n\n\nBased on IBM Plex Typeface\nCopyright © 2017 IBM Corp. with Reserved Font Name “Plex”\n\n\nLicense\nThis Font Software is licensed under the SIL Open Font License, Version 1.1. This license is copied below, and is also available with a FAQ at: http://scripts.sil.org/OFL\n\n\n\nSIL OPEN FONT LICENSE Version 1.1 - 26 February 2007\n\n\n\nPREAMBLE The goals of the Open Font License (OFL) are to stimulate worldwide development of collaborative font projects, to support the font creation efforts of academic and linguistic communities, and to provide a free and open framework in which fonts may be shared and improved in partnership with others.\nThe OFL allows the licensed fonts to be used, studied, modified and redistributed freely as long as they are not sold by themselves. The fonts, including any derivative works, can be bundled, embedded, redistributed and/or sold with any software provided that any reserved names are not used by derivative works. The fonts and derivatives, however, cannot be released under any other type of license. The requirement for fonts to remain under this license does not apply to any document created using the fonts or their derivatives.\nDEFINITIONS “Font Software” refers to the set of files released by the Copyright Holder(s) under this license and clearly marked as such. This may include source files, build scripts and documentation.\n“Reserved Font Name” refers to any names specified as such after the copyright statement(s).\n“Original Version” refers to the collection of Font Software components as distributed by the Copyright Holder(s).\n“Modified Version” refers to any derivative made by adding to, deleting, or substituting – in part or in whole – any of the components of the Original Version, by changing formats or by porting the Font Software to a new environment.\n“Author” refers to any designer, engineer, programmer, technical writer or other person who contributed to the Font Software.\nPERMISSION & CONDITIONS Permission is hereby granted, free of charge, to any person obtaining a copy of the Font Software, to use, study, copy, merge, embed, modify, redistribute, and sell modified and unmodified copies of the Font Software, subject to the following conditions:\n\nNeither the Font Software nor any of its individual components, in Original or Modified Versions, may be sold by itself.\nOriginal or Modified Versions of the Font Software may be bundled, redistributed and/or sold with any software, provided that each copy contains the above copyright notice and this license. These can be included either as stand-alone text files, human-readable headers or in the appropriate machine-readable metadata fields within text or binary files as long as those fields can be easily viewed by the user.\nNo Modified Version of the Font Software may use the Reserved Font Name(s) unless explicit written permission is granted by the corresponding Copyright Holder. This restriction only applies to the primary font name as presented to the users.\nThe name(s) of the Copyright Holder(s) or the Author(s) of the Font Software shall not be used to promote, endorse or advertise any Modified Version, except to acknowledge the contribution(s) of the Copyright Holder(s) and the Author(s) or with their explicit written permission.\nThe Font Software, modified or unmodified, in part or in whole, must be distributed entirely under this license, and must not be distributed under any other license. The requirement for fonts to remain under this license does not apply to any document created using the Font Software.\n\nTERMINATION This license becomes null and void if any of the above conditions are not met.\nDISCLAIMER THE FONT SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM OTHER DEALINGS IN THE FONT SOFTWARE."
+  },
+  {
+    "objectID": "2023/day/2023-introduction/index.html",
+    "href": "2023/day/2023-introduction/index.html",
+    "title": "2023: Introduction",
+    "section": "",
+    "text": "Here’s a demo introduction page. It’s created from \"./_templates/YYYY-intro\" as part of the call to aoc_new_year(2023).\nIt can be deleted with a call to aoc_delete_intro(2023) (though there needs to be at least one post in ./2023/day for the website to render from Quarto v1.4).\nThis is a good place to note any overarching themes for the year, what you want to practice/learn, etc."
+  },
+  {
     "objectID": "fonts/Readme.html",
     "href": "fonts/Readme.html",
     "title": "iA-Fonts",
     "section": "",
     "text": "iA-Fonts\nThe iA Writer fonts comes bundled with iA Writer for for Android, Windows, Mac, iPadOS and iOS\nFor in depth explanation of iA Writer Mono, Duo, and Quattro please read our blog entry on Duospace and on iA Writer Mono, Duo, and Quattro\nThis is a modification of IBM’s Plex font. The upstream project is here Please read the licensing file before working with it.\nIf you fork or use our fonts, please reference iA Writer clearly. Use them creatively.\nDon’t be a copycat. With or without the fonts, do not clone our products or our website. Selling our work under your name is blatantly disrespectful and criminal. Distributing knockoffs of our work for free doesn’t make you Robin Hood either. We do not approve of free plugins or themes for other apps and other counterfeits that imitate our products. They’re poor quality, they undermine our business, and they openly violate our copyright. Due to their poor quality, they tarnish our reputation. They’re unethical, illegal, and lame."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Advent of Code",
+    "section": "",
+    "text": "Advent of Code is a series of increasingly difficult programming challenges, released daily each year throughout December in the run-up to Christmas.\nThis website is created from the EllaKaye/advent-of-code-website-template template repository. There’s documentation on how to use and adapt the template in the repo README.\nIt is built with Quarto and works hand-in-hand with the R package aochelpers. The package provides function to manage this website, e.g. to create new posts from a template, to download and read in the puzzle input, and will eventually include functions to help with the challenges themselves. See the package website for more details.\nAs part of the demo, this template comes with an example listing page and Day 1 post for 2022, which you can delete with aochelpers::aoc_delete_year(2022), as well as a listing and introduction to get started for 2023.\nThere are two built-in themes. The light theme is designed to be quite clean, with a Christmas green and red colours. The dark theme is designed to be reminiscent of the Advent of Code website (though not identical, since the design of https://adventofcode.com is part of its registered trademark). You can switch between them using the toggle in the top right corner of the page. Both themes use fonts from iA. The themes can be adapted in the custom-light.scss and custom-dark.scss files."
+  },
+  {
+    "objectID": "2022.html",
+    "href": "2022.html",
+    "title": "2022",
+    "section": "",
+    "text": "Title\n\n\nCategories\n\n\n\n\n\n\n2022: Day 1\n\n\nbase R,lists\n\n\n\n\n\n\nNo matching items"
   }
 ]
