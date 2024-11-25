@@ -1,0 +1,12 @@
+---
+title: "2024: Introduction"
+date: 2024-11-25
+code-tools: false
+categories: [demo]
+---
+
+Here's a demo introduction page. It's created from `"./_templates/YYYY-intro"` as part of the call to `aoc_new_year(2024)`. 
+
+It can be deleted with a call to `aoc_delete_intro(2024)` (though there needs to be at least one post in `./2024/day` for the website to render from Quarto v1.4).
+
+This is a good place to note any overarching themes for the year, what you want to practice/learn, etc.

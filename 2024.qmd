@@ -1,7 +1,7 @@
 ---
-title: "2023"
+title: "2024"
 listing:
-  contents: "2023/day"
+  contents: "2024/day"
   sort: "date"
   type: table
   categories: true

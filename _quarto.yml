@@ -10,13 +10,12 @@ execute:
   
 website:
   title: "Advent of Code"
-  #site-url: https://github.com
   description: My solutions to Advent of Code
   repo-url: https://github.com/EllaKaye/advent-of-code-website-template
   navbar:
     left:
-     - 2022.qmd
-     - 2023.qmd
+      - 2022.qmd
+      - 2024.qmd
     right:
       - icon: github
         href: https://github.com/EllaKaye/advent-of-code-website-template

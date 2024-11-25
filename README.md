@@ -11,7 +11,7 @@ It works hand-in-hand with the
 which makes it incredibly easy to set up new posts, scripts and
 listings, using supplied (though personalisable) templates, found in the
 `_templates` directory. When a template is copied by functions from
-**aochelpers**, e.g. `aoc_new_year(2022)` or `aoc_new_day(1, 2023)` any
+**aochelpers**, e.g. `aoc_new_year(2022)` or `aoc_new_day(1, 2024)` any
 occurrence of “DD” and “YYYY” in both the copied files’ titles and the
 text inside will be replaced with the value of the `day` and `year`
 arguments respectively.
@@ -135,12 +135,12 @@ page for details.
 
 ## Examples posts
 
-The template comes ready to go for 2023, with a placeholder introduction
+The template comes ready to go for 2024, with a placeholder introduction
 post, and also with an day 1 post for 2022, so you can see what the
 templates look in action. All files related to 2022 can be removed with
-a call to `aoc_delete_year(2022)`. The intro post for 2023 can be
-removed with `aoc_delete_intro(2023)` (once there’s another post for
-2023 present).
+a call to `aoc_delete_year(2022)`. The intro post for 2024 can be
+removed with `aoc_delete_intro(2024)` (once there’s another post for
+2024 present).
 
 ## Functions for reading in input
 
