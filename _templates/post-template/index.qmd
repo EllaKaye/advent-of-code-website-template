@@ -11,8 +11,6 @@ draft: false
 
 [The original challenge](https://adventofcode.com/YYYY/day/DD)
 
-[My data](input){target="_blank"}
-
 ## Part 1
 
 ```{r}
