@@ -46,21 +46,21 @@
     "href": "2022/day/1/index.html",
     "title": "2022: Day 1",
     "section": "",
-    "text": "The original challenge\nMy data"
+    "text": "The original challenge"
   },
   {
     "objectID": "2022/day/1/index.html#setup",
     "href": "2022/day/1/index.html#setup",
     "title": "2022: Day 1",
     "section": "",
-    "text": "The original challenge\nMy data"
+    "text": "The original challenge"
   },
   {
     "objectID": "2022/day/1/index.html#part-1",
     "href": "2022/day/1/index.html#part-1",
     "title": "2022: Day 1",
     "section": "Part 1",
-    "text": "Part 1\nI’m including this post in the website example to demonstrate what a typical post will look like, using post-template, in the _templates directory as a starting point. This post is created by a call to aoc_new_day(1, 2022). It can be deleted with a call to aoc_delete_day(1, 2022), or all posts and the listing for the year can be deleted with aoc_delete_year(2022).\n\n\n\n\n\n\nNote\n\n\n\nThis is Ella Kaye’s solution1, with her puzzle input. If attempting this challenge yourself, your solution will be different.\n\n\n\n\nToggle the code\nlibrary(aochelpers)\ninput &lt;- aoc_input_vector(1, 2022, \"numeric\")\n\n\nI’m using the aoc_input_vector() function from the aochelpers package to read in the data, but otherwise using base R functions (including the native pipe, |&gt;) for this puzzle.\nIn this challenge, we’re given groups of numbers and we need to find the sum of each group. Our solution is the largest of these. The groups are separated by a blank line. When reading in the input as a numeric vector, these are coerced to NA. We can identify the new groups by the NA values, produce an index for them with cumsum(is.na(input)), which increments when a new NA is reached, then use this with split() to split the input into a list of vectors, one for each group. We need the argument na.rm = TRUE in sapply() because each vector, other than the first, starts with NA, as that’s where it was split.\n\n\nToggle the code\ntotals &lt;- split(input, cumsum(is.na(input))) |&gt; \n  sapply(sum, na.rm = TRUE) \n\nmax(totals)\n\n\n[1] 66719"
+    "text": "Part 1\nI’m including this post in the website example to demonstrate what a typical post will look like, using post-template, in the _templates directory as a starting point. This post is created by a call to aoc_new_day(1, 2022). It can be deleted with a call to aoc_delete_day(1, 2022), or all posts and the listing for the year can be deleted with aoc_delete_year(2022).\n\n\n\n\n\n\nNote\n\n\n\nThis is Ella Kaye’s solution1, with her puzzle input. If attempting this challenge yourself, your solution will be different.\n\n\n\n\nToggle the code\nlibrary(aochelpers)\ninput &lt;- aoc_input_vector(1, 2022, mode = \"numeric\")\n\n\nI’m using the aoc_input_vector() function from the aochelpers package to read in the data, but otherwise using base R functions (including the native pipe, |&gt;) for this puzzle.\nIn this challenge, we’re given groups of numbers and we need to find the sum of each group. Our solution is the largest of these. The groups are separated by a blank line. When reading in the input as a numeric vector, these are coerced to NA. We can identify the new groups by the NA values, produce an index for them with cumsum(is.na(input)), which increments when a new NA is reached, then use this with split() to split the input into a list of vectors, one for each group. We need the argument na.rm = TRUE in sapply() because each vector, other than the first, starts with NA, as that’s where it was split.\n\n\nToggle the code\ntotals &lt;- split(input, cumsum(is.na(input))) |&gt; \n  sapply(sum, na.rm = TRUE) \n\nmax(totals)\n\n\n[1] 66719"
   },
   {
     "objectID": "2022/day/1/index.html#part-2",
