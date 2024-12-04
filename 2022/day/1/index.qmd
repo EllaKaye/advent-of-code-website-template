@@ -26,7 +26,7 @@ This is Ella Kaye's solution^[Ella is the author of this website template and of
 ```{r}
 #| eval: !expr OK
 library(aochelpers)
-input <- aoc_input_vector(1, 2022, "numeric")
+input <- aoc_input_vector(1, 2022, mode = "numeric")
 ```
 
 I'm using the `aoc_input_vector()` function from the **aochelpers** package to read in the data, but otherwise using base R functions (including the native pipe, `|>`) for this puzzle. 
