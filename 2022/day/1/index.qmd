@@ -9,8 +9,6 @@ draft: false
 
 [The original challenge](https://adventofcode.com/2022/day/1)
 
-[My data](input){target="_blank"}
-
 ## Part 1
 
 I'm including this post in the website example to demonstrate what a typical post will look like, using `post-template`, in the `_templates` directory as a starting point. This post is created by a call to `aoc_new_day(1, 2022)`. It can be deleted with a call to `aoc_delete_day(1, 2022)`, or all posts and the listing for the year can be deleted with `aoc_delete_year(2022)`.
