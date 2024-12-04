@@ -9,8 +9,6 @@ draft: false
 
 [The original challenge](https://adventofcode.com/2022/day/1)
 
-[My data](input){target="_blank"}
-
 ## Part 1
 
 I'm including this post in the website example to demonstrate what a typical post will look like, using `post-template`, in the `_templates` directory as a starting point. This post is created by a call to `aoc_new_day(1, 2022)`. It can be deleted with a call to `aoc_delete_day(1, 2022)`, or all posts and the listing for the year can be deleted with `aoc_delete_year(2022)`.
@@ -28,7 +26,7 @@ This is Ella Kaye's solution^[Ella is the author of this website template and of
 ```{r}
 #| eval: !expr OK
 library(aochelpers)
-input <- aoc_input_vector(1, 2022, "numeric")
+input <- aoc_input_vector(1, 2022, mode = "numeric")
 ```
 
 I'm using the `aoc_input_vector()` function from the **aochelpers** package to read in the data, but otherwise using base R functions (including the native pipe, `|>`) for this puzzle. 
